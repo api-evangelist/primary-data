@@ -1,8 +1,25 @@
 aid: primary-data
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/primary-data.png
 name: Primary Data
-description: Primary Data is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Primary Data was a software-defined storage and data-virtualization startup best known for its
+  DataSphere platform, a metadata engine that abstracted files across heterogeneous storage tiers (flash,
+  disk, cloud) behind a single global namespace and moved data automatically by policy. Backed by Battery
+  Ventures among other investors, the company ceased operations in 2017, with much of its team and technology
+  continuing at Hammerspace. It was surfaced as a Battery Ventures portfolio company and added to the API
+  Evangelist network as a stub for enrichment. As of this pass the company is defunct and primarydata.com is
+  a parked domain (GoDaddy lander), so there is no live developer portal, documentation, or API surface to
+  harvest.
 url: https://raw.githubusercontent.com/api-evangelist/primary-data/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +27,28 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-detail: Company ceased operations in 2017; team/IP continued at Hammerspace. primarydata.com is a
+  parked domain (every path returns a JS redirect to /lander) with no live API surface.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Storage
+- Data Virtualization
+- Software-Defined Storage
+- Data Management
+- Metadata
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
